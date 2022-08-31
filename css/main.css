@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  --extraBig-fontSize: 2.5rem;
+  --big-fontSize: 2.5rem;
+  --normal-fontSize: 1rem;
+  --small-fontSize: 0.85rem;
+  --smaller-fontSize: 0.75rem;
+  --tiny-fontSize: 0.65rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Epilogue", sans-serif;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+}
+.hero__nav {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+  gap: 4rem;
+}
+.nav__menu {
+  flex: 1;
+  display: flex;
+  gap: 2.5rem;
+}
+.menu__item {
+  text-decoration: none;
+  color: var(--Medium-Gray);
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s background ease-in-out;
+  opacity: 0.7;
+  position: relative;
+}
+.menu__item:hover {
+  opacity: 1;
+}
+.menu__item:hover > .menu__dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+.menu__item > span {
+  font-weight: 700;
+}
+.menu__item > img {
+  transition: 0.3s transform ease-in-out;
+}
+.menu__item:hover > img {
+  transform: rotate(180deg);
+}
+.menu__dropdown {
+  position: absolute;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  gap: 0.5rem;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background: #fff;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s opacity ease-in-out;
+}
+.dropdown__item {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s background ease-in-out;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.dropdown__item:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+.nav__actions {
+  display: flex;
+  gap: 1rem;
+}
+.nav__actions > .actions__btn {
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: var(--Medium-Gray);
+}
+.cta {
+  border: 2px solid var(--Medium-Gray);
+}
+.hero__section {
+  height: calc(100vh - 75px);
+  padding: 5rem 10rem 10rem;
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+}
+.section__read {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.read__title {
+  font-size: 95px;
+}
+.read__paragraph {
+  font-size: var(--normal-fontSize);
+  color: var(--Medium-Gray);
+  line-height: 1.5;
+}
+.read__more {
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--Almost-Black);
+  border: 2px solid var(--Almost-Black);
+  text-decoration: none;
+  transition: 0.3s background ease-in-out;
+}
+.read__more:hover {
+  background: var(--Almost-Black);
+  color: #fff;
+}
+.section__auspicious {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.section__ilustration > img {
+  height: 100%;
+}
+@media screen and (max-width: 375px) {
+
+}
