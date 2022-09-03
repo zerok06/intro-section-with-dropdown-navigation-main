@@ -15,6 +15,56 @@
   <body>
     <header class="hero">
       <nav class="hero__nav">
+        <div class="hero__nav--mobile">
+          <nav class="nav--mobile">
+            <label for="check__menu">
+              <img src="./assets/icon-close-menu.svg" alt="menu close" />
+            </label>
+            <div class="mobile__menu">
+              <label class="menu__dropdown--mobile">
+                <label class="menu__dropdown--title" for="check__menu-1"
+                  >Features</label
+                >
+                <input type="checkbox" id="check__menu-1" />
+                <div class="dropdown--container">
+                  <a href="#" class="dropdown__container--item icon">
+                    <img src="./assets/icon-todo.svg" alt="" />
+                    <span>Todo List</span>
+                  </a>
+                  <a href="#" class="dropdown__container--item icon">
+                    <img src="./assets/icon-calendar.svg" alt="" />
+                    <span>Calendar</span>
+                  </a>
+                  <a href="#" class="dropdown__container--item icon">
+                    <img src="./assets/icon-reminders.svg" alt="" />
+                    <span>Reminders</span>
+                  </a>
+                  <a href="#" class="dropdown__container--item icon">
+                    <img src="./assets/icon-planning.svg" alt="" />
+                    <span>Planning</span>
+                  </a>
+                </div>
+              </label>
+              <label class="menu__dropdown--mobile">
+                <label class="menu__dropdown--title" for="check__menu-2"
+                  >Company</label
+                >
+                <input type="checkbox" id="check__menu-2" />
+                <div class="dropdown--container">
+                  <a href="#" class="dropdown__container--item">
+                    <span>History</span>
+                  </a>
+                  <a href="#" class="dropdown__container--item">
+                    <span>Our Team</span>
+                  </a>
+                  <a href="#" class="dropdown__container--item">
+                    <span>Blog</span>
+                  </a>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
         <a href="/" class="nav__logo">
           <img src="./assets/logo.svg" alt="" class="logo" />
         </a>
@@ -61,6 +111,10 @@
           <a href="#" class="actions__btn">Login</a>
           <a href="#" class="actions__btn cta">Register</a>
         </div>
+        <input type="checkbox" id="check__menu" />
+        <label for="check__menu">
+          <img src="./assets/icon-menu.svg" alt="menu" />
+        </label>
       </nav>
       <section class="hero__section">
         <article class="section__read">
@@ -87,12 +141,12 @@
         </article>
         <picture class="section__ilustration">
           <source
-            media="(min-width: 375px)"
-            srcset="./assets/image-hero-desktop.png"
+            media="(max-width: 375px)"
+            srcset="./assets/image-hero-mobile.png"
           />
           <source
-            media="(min-width: 1440px)"
-            srcset="./assets/image-hero-mobile.png"
+            media="(max-width: 1440px)"
+            srcset="./assets/image-hero-desktop.png"
           />
           <img src="./assets/image-hero-desktop.png" alt="man macbook" />
         </picture>
